@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Keli nauji elementai</title>
+		<!-- HTML elementas, kuriame rašomi stiliai -->
+		<style>
+			ul {
+				background-color: rgb(73, 124, 107);
+				width: 150px;
+				height: 200px;
+			}
+
+			body {
+				background-color: linen;
+			}
+
+			h1 {
+				color: maroon;
+				margin-left: 40px;
+			}
+
+			.special-paragraph {
+				color: blue;
+			}
+
+			.my-table {
+				border: 2px solid black;
+				width: 80%;
+				border-collapse: collapse;
+				margin-left: 20px;
+			}
+			th,
+			td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			td {
+				text-align: center;
+			}
+
+			th {
+				background-color: orangered;
+				color: white;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			.button {
+				background-color: chartreuse;
+				/* Kai norime kad elementas susitrauktu naudojame savybe width: fit-content; */
+				width: fit-content;
+				padding-left: 25px;
+				padding-right: 25px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			#order {
+				background-color: blue;
+				color: white;
+				border-bottom: 3px solid rgb(212, 4, 4);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Priskirti fono spalva, ir priskirti teksto spalva -->
+
+		<h1>Sąrašai</h1>
+		<!-- Unordered List -->
+		<ul>
+			<!-- CTRL + SHIFT + ^ -->
+			<li>Elmentas 1</li>
+			<li>Elmentas 2</li>
+			<li>Elmentas 3</li>
+			<li>Elmentas 4</li>
+			<li>Elmentas 5</li>
+			<li>Elmentas 6</li>
+		</ul>
+		<h1>Sąrašai 2</h1>
+		<!-- Ordered List -->
+		<ol id="order">
+			<li>Elmentas 1</li>
+			<li>Elmentas 2</li>
+			<li>Elmentas 3</li>
+			<li>Elmentas 4</li>
+			<li>Elmentas 5</li>
+			<li>Elmentas 6</li>
+		</ol>
+
+		<!-- class atributas - klasifikatorius naudojamas css selektoriui -->
+		<p class="special-paragraph">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+			perferendis cupiditate ducimus maiores velit rerum assumenda, dicta
+			explicabo animi, quas aut provident culpa voluptate cumque quos iure
+			accusantium, obcaecati omnis!
+		</p>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+			perferendis cupiditate ducimus maiores velit rerum assumenda, dicta
+			explicabo animi, quas aut provident culpa voluptate cumque quos iure
+			accusantium, obcaecati omnis!
+		</p>
+		<!-- Komentaras padedamas su kombinacija CTRL + /  -->
+		<!-- divizija -->
+		<div>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+			nostrum ad qui quidem nisi obcaecati, quia temporibus maxime eos sint
+			voluptate perferendis sit, modi, voluptatum error quibusdam cumque
+			consequatur pariatur!
+		</div>
+		<div>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+			nostrum ad qui quidem nisi obcaecati, quia temporibus maxime eos sint
+			voluptate perferendis sit, modi, voluptatum error quibusdam cumque
+			consequatur pariatur!
+		</div>
+		<br />
+		<hr />
+		<br />
+		<span>Lorem, ipsum dolor.</span>
+		<span>Lorem, ipsum dolor.</span>
+
+		<div class="button">Mygtukas</div>
+
+		<!-- Lenteles elementas -->
+		<table class="my-table">
+			<!-- Lenteles antraščių tagas -->
+			<thead>
+				<!-- table row -->
+				<tr>
+					<!-- table header -->
+					<th class="ipatingas">Vardas</th>
+					<th class="ipatingas">Pavardė</th>
+					<th>El. paštas</th>
+					<th>Telefono numeris</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john.doe@example.com</td>
+					<td>123 (456) 789</td>
+				</tr>
+				<tr>
+					<td>Allen</td>
+					<td>Carter</td>
+					<td>allen.carter@example.com</td>
+					<td>123 (456) 987</td>
+				</tr>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john.doe@example.com</td>
+					<td>123 (456) 789</td>
+				</tr>
+				<tr>
+					<td>Allen</td>
+					<td>Carter</td>
+					<td>allen.carter@example.com</td>
+					<td>123 (456) 987</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Teksto išdalinimas į eilutes - kombinacija ALT + Z -->
+	</body>
+</html>
