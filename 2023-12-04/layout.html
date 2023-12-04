@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			.box {
+				width: 800px;
+				height: 400px;
+				background-color: bisque;
+				/* Nustatoma savybė flex leidžianti pozicionuoti child elementus */
+				display: flex;
+				/* flex-direction: column; */
+				/* Jei pakeičiame flex-direction: column; pasikeičia pradinis elementų pozicionavimas. 
+				Taipogi pasikeičia:
+				 - justify-content pasikeičia į vertikalią padėtį 
+				 - align-items pasikeičia į horizontalią padėtį 
+				*/
+
+				/* Nustato horizontalią elemento padėtį elemente */
+				justify-content: start;
+				/* Nustato vertikalią elemento padėtį elemente */
+				align-items: start;
+			}
+			.small-box {
+				width: 100px;
+				height: 100px;
+				margin: 5px;
+				background-color: tomato;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="small-box"></div>
+			<div class="small-box"></div>
+			<div class="small-box"></div>
+		</div>
+	</body>
+</html>

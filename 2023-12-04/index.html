@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			.logo-image {
+				width: 120px;
+			}
+			.header-content {
+				display: flex;
+
+				/* align-items: end;   // pozicionuoja elementus vertikaliai*/
+				/* justify-content: end; //pozicionuoja horizontaliai */
+				justify-content: space-between;
+				align-items: center;
+			}
+			a {
+				/* pašalina defaultines teksto dekoracijas a elementuose */
+				text-decoration: none;
+				color: white;
+			}
+			/* Kai ant elemento užvedamas pelės žymeklis, pakeisti jo stilių pasinaudojant :hover */
+			a:hover {
+				text-decoration: underline;
+			}
+			header {
+				/* Trumpesnis paddingo reikšmių užrašymas: viršus=apačia=15px kairė=dešinė=0px */
+				padding: 15px 0px;
+				background-color: #1f3149;
+			}
+			.container {
+				/* Konteineris - puslapio išdėstymo elementas, naudojamas turiniui sutraukti į vidurį. 
+                1. Nustatomas maksimalus turinio plotis 
+                2. Nustatoma margin:0 auto; taip išcentruojant turinį per vidurį
+                */
+				max-width: 1280px;
+				margin: 0 auto;
+			}
+			nav {
+				display: flex;
+				/* Tarpelio pridėjimas tarp elementų nenorint išplėsti tėvinio elemento su gap: */
+				gap: 20px;
+				width: 50%;
+				justify-content: end;
+			}
+			section {
+				display: flex;
+				/* Minimalaus aukščio nustatymas elementui:  */
+				min-height: 400px;
+				padding: 15px 0px;
+			}
+			.image-part {
+				width: 50%;
+				display: flex;
+				justify-content: center;
+			}
+			.text-part {
+				width: 50%;
+			}
+			.image-part img {
+				width: 80%;
+			}
+			main {
+				margin-top: 30px;
+			}
+			html {
+				/* nuslinkimo animacija - sušvelnintai */
+				scroll-behavior: smooth;
+			}
+			footer {
+				background-color: #1f3149;
+				color: white;
+				padding: 15px 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header-content container">
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
+					class="logo-image"
+				/>
+				<nav>
+					<!-- Galime vietoje nuorodos pateikti id atributą. Tada vykdomas nuslinkimas iki turinio pasinaudojant slankmačiu dešinėje pusėje -->
+					<a href="#home">Home</a>
+					<a href="#about-us">About us</a>
+					<a href="#contact-us">Contact</a>
+					<a href="#products">Products</a>
+					<a href="#services">Services</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section
+				class="container"
+				id="home"
+			>
+				<div class="image-part">
+					<img
+						src="https://aruodas-img.dgn.lt/object_67_106084247/kauno-r-sav-akademijos-mstl-skroblu-g.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="text-part">
+					<h1>Home</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+						incidunt officia iusto recusandae ut, consequuntur dolorum in, a
+						voluptate tenetur quos distinctio delectus molestiae, rerum qui amet
+						dicta vero. Unde hic dolorum dolor facere veniam magnam, quae eum
+						culpa nam cumque eaque assumenda accusamus expedita, commodi omnis
+						modi! Iusto ab doloribus quae ipsam dolore optio animi, ut sunt
+						aperiam placeat obcaecati quis ex voluptas consequuntur vero
+						reiciendis ipsum? Odit.
+					</p>
+				</div>
+			</section>
+			<hr />
+			<section
+				class="container"
+				id="about-us"
+			>
+				<div class="text-part">
+					<h1>About us</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+						incidunt officia iusto recusandae ut, consequuntur dolorum in, a
+						voluptate tenetur quos distinctio delectus molestiae, rerum qui amet
+						dicta vero. Unde hic dolorum dolor facere veniam magnam, quae eum
+						culpa nam cumque eaque assumenda accusamus expedita, commodi omnis
+						modi! Iusto ab doloribus quae ipsam dolore optio animi, ut sunt
+						aperiam placeat obcaecati quis ex voluptas consequuntur vero
+						reiciendis ipsum? Odit.
+					</p>
+				</div>
+				<div class="image-part">
+					<img
+						src="https://cdnwebsite.databox.com/wp-content/uploads/2020/12/01062702/about-us-page-examples.png"
+						alt=""
+					/>
+				</div>
+			</section>
+			<hr />
+			<section
+				class="container"
+				id="contact-us"
+			>
+				<div class="image-part">
+					<img
+						src="https://media.istockphoto.com/id/1365543480/video/contact-us-concept.jpg?s=640x640&k=20&c=G16GzQ4uJKlITww2ArmKNB9UKb1-IT2eyJrUxkUmAIY="
+						alt=""
+					/>
+				</div>
+				<div class="text-part">
+					<h1>Contact</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+						incidunt officia iusto recusandae ut, consequuntur dolorum in, a
+						voluptate tenetur quos distinctio delectus molestiae, rerum qui amet
+						dicta vero. Unde hic dolorum dolor facere veniam magnam, quae eum
+						culpa nam cumque eaque assumenda accusamus expedita, commodi omnis
+						modi! Iusto ab doloribus quae ipsam dolore optio animi, ut sunt
+						aperiam placeat obcaecati quis ex voluptas consequuntur vero
+						reiciendis ipsum? Odit.
+					</p>
+				</div>
+			</section>
+			<hr />
+			<section
+				class="container"
+				id="products"
+			>
+				<div class="text-part">
+					<h1>Products</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+						incidunt officia iusto recusandae ut, consequuntur dolorum in, a
+						voluptate tenetur quos distinctio delectus molestiae, rerum qui amet
+						dicta vero. Unde hic dolorum dolor facere veniam magnam, quae eum
+						culpa nam cumque eaque assumenda accusamus expedita, commodi omnis
+						modi! Iusto ab doloribus quae ipsam dolore optio animi, ut sunt
+						aperiam placeat obcaecati quis ex voluptas consequuntur vero
+						reiciendis ipsum? Odit.
+					</p>
+				</div>
+				<div class="image-part">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJu5fUeUN8aw3i7_3YdmE4SQ0dkYTomUk3rA&usqp=CAU"
+						alt=""
+					/>
+				</div>
+			</section>
+			<hr />
+			<section
+				class="container"
+				id="services"
+			>
+				<div class="image-part">
+					<img
+						src="https://www.fos-tech.nl/wp-content/uploads/2013/04/our-services_2.png"
+						alt=""
+					/>
+				</div>
+				<div class="text-part">
+					<h1>Services</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+						incidunt officia iusto recusandae ut, consequuntur dolorum in, a
+						voluptate tenetur quos distinctio delectus molestiae, rerum qui amet
+						dicta vero. Unde hic dolorum dolor facere veniam magnam, quae eum
+						culpa nam cumque eaque assumenda accusamus expedita, commodi omnis
+						modi! Iusto ab doloribus quae ipsam dolore optio animi, ut sunt
+						aperiam placeat obcaecati quis ex voluptas consequuntur vero
+						reiciendis ipsum? Odit.
+					</p>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">Justinas Krutikovas 2023</div>
+		</footer>
+	</body>
+</html>
