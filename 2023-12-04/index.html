@@ -7,80 +7,12 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Document</title>
-		<style>
-			body {
-				margin: 0;
-			}
-			.logo-image {
-				width: 120px;
-			}
-			.header-content {
-				display: flex;
-
-				/* align-items: end;   // pozicionuoja elementus vertikaliai*/
-				/* justify-content: end; //pozicionuoja horizontaliai */
-				justify-content: space-between;
-				align-items: center;
-			}
-			a {
-				/* pašalina defaultines teksto dekoracijas a elementuose */
-				text-decoration: none;
-				color: white;
-			}
-			/* Kai ant elemento užvedamas pelės žymeklis, pakeisti jo stilių pasinaudojant :hover */
-			a:hover {
-				text-decoration: underline;
-			}
-			header {
-				/* Trumpesnis paddingo reikšmių užrašymas: viršus=apačia=15px kairė=dešinė=0px */
-				padding: 15px 0px;
-				background-color: #1f3149;
-			}
-			.container {
-				/* Konteineris - puslapio išdėstymo elementas, naudojamas turiniui sutraukti į vidurį. 
-                1. Nustatomas maksimalus turinio plotis 
-                2. Nustatoma margin:0 auto; taip išcentruojant turinį per vidurį
-                */
-				max-width: 1280px;
-				margin: 0 auto;
-			}
-			nav {
-				display: flex;
-				/* Tarpelio pridėjimas tarp elementų nenorint išplėsti tėvinio elemento su gap: */
-				gap: 20px;
-				width: 50%;
-				justify-content: end;
-			}
-			section {
-				display: flex;
-				/* Minimalaus aukščio nustatymas elementui:  */
-				min-height: 400px;
-				padding: 15px 0px;
-			}
-			.image-part {
-				width: 50%;
-				display: flex;
-				justify-content: center;
-			}
-			.text-part {
-				width: 50%;
-			}
-			.image-part img {
-				width: 80%;
-			}
-			main {
-				margin-top: 30px;
-			}
-			html {
-				/* nuslinkimo animacija - sušvelnintai */
-				scroll-behavior: smooth;
-			}
-			footer {
-				background-color: #1f3149;
-				color: white;
-				padding: 15px 0px;
-			}
-		</style>
+		<!-- rel atributas nurodo, kokio tipo paketas bus importuojamas -->
+		<!-- href nurodo kelią iki failo -->
+		<link
+			rel="stylesheet"
+			href="./styles/styles.css"
+		/>
 	</head>
 	<body>
 		<header>

@@ -1,0 +1,115 @@
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+nav {
+	background-color: #222222;
+	color: #d0cece;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.logo {
+	font-size: 24px;
+	margin: auto 20px;
+}
+
+.navigation a {
+	display: inline-block;
+	color: #d0cece;
+	text-decoration: none;
+	padding: 15px 10px;
+}
+.navigation a:hover {
+	background-color: #333333;
+	color: white;
+}
+
+nav .container {
+	display: flex;
+}
+.input-group {
+	justify-self: flex-end;
+	margin: auto 0 auto auto;
+	/* margin: top, right, bottom, left */
+}
+
+.input-group input,
+.input-group button {
+	padding: 7px 14px;
+}
+
+header {
+	background-color: #9acd32;
+}
+
+header .container {
+	padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header .container h1 {
+	font-size: 60px;
+	color: #adfe2f;
+	margin: 0;
+}
+
+header .container p {
+	font-size: 24px;
+	color: #adfe2f;
+}
+
+header .container button {
+	background-color: #337ab7;
+	color: white;
+	font-weight: 500;
+	border: 0;
+	padding: 8px 12px;
+	border-radius: 3px;
+}
+
+header .container button:hover {
+	background-color: #245c8e;
+	cursor: pointer;
+}
+
+#collaboration .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#collaboration .container p {
+	text-align: center;
+	color: gray;
+}
+#collaboration .container h1 {
+	font-size: 42px;
+	margin-bottom: 0px;
+}
+
+#collaboration .container h1 small {
+	font-size: 28px;
+	color: gray;
+}
+
+#collaboration .container .photos {
+	display: flex;
+	gap: 40px;
+}
+
+#collaboration .container .photos h2 {
+	text-align: center;
+}
+#collaboration .container .photos p {
+	text-align: justify;
+}
+
+.isskirtine-foto {
+	border-radius: 100%;
+}
