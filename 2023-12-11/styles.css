@@ -1,0 +1,135 @@
+@font-face {
+	font-family: "Mandali";
+	src: url("./fonts/Mandali-Regular.ttf");
+}
+@font-face {
+	font-family: "Mandali-Extrabold";
+	src: url("./fonts/Cerebri.Sans.Pro/CerebriSansPro-ExtraBold.ttf");
+}
+
+body {
+	font-family: "Mandali", sans-serif;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+nav .container .right a {
+	color: #434242;
+	/* Alternatyva tarpo sudarymui tarp navigacijos linku */
+	/* margin-right: 40px; */
+	text-decoration: none;
+	transition: all;
+	transition-duration: 400ms;
+}
+nav .container .right {
+	display: flex;
+	gap: 40px;
+}
+
+nav {
+	box-shadow: 1px 5px 10px gainsboro;
+}
+
+nav .container .right a:hover {
+	color: #1fe1ad;
+}
+
+#hero {
+	background-image: url("./images/hero-bg.png");
+	background-size: cover;
+	min-height: 800px;
+	padding: 200px 0 0 0;
+}
+#hero .container {
+	display: flex;
+	flex-direction: column;
+}
+#hero .container .hero-main {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 150px;
+}
+
+#hero .container .hero-main .left,
+#hero .container .hero-main .right {
+	width: 50%;
+}
+
+#hero .container .hero-main .right img {
+	width: 100%;
+}
+
+#hero .container .hero-main .left {
+	display: flex;
+	flex-direction: column;
+}
+
+#hero .container .hero-main .left .discount {
+	background-color: #f8f8f8;
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
+	width: 35%;
+	padding: 0 20px;
+	color: #434242;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.discount span {
+	color: #1fe1ad;
+}
+
+#hero .container .hero-main .left h1 {
+	font-size: 68px;
+	font-family: "Cerebri-ExtraBold", sans-serif;
+	color: #434242;
+	margin-bottom: 20px;
+}
+
+#hero .container .hero-main .left .paragraph-text {
+	color: #434242;
+}
+
+.more-about {
+	background: rgb(29, 225, 172);
+	background: linear-gradient(
+		143deg,
+		rgba(29, 225, 172, 1) 0%,
+		rgba(175, 255, 205, 1) 100%
+	);
+	color: white;
+	border: 0;
+	padding: 7px 14px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+.see-live {
+	color: #434242;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+.hero-footer {
+	display: flex;
+	gap: 90px;
+}
+
+.hero-footer img {
+	width: 13%;
+}

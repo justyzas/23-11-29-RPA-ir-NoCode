@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<style>
+			.box {
+				width: 300px;
+				height: 300px;
+				background-color: bisque;
+				/* Nustato reliatyvia pozicija. Pozicionuojamas elementas nuo jo iprastinės pozicijos*/
+				position: relative;
+				/* Atitraukimas nuo viršaus per 10 px */
+				top: 1000px;
+				/* Atitraukimas nuo kaires per 10px */
+				left: 100px;
+				/* right - panaši kaip ir left savybe, tačiau kartu nenaudotina*/
+				/* https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+			}
+			.small-box {
+				width: 100px;
+				height: 100px;
+				background-color: blueviolet;
+				position: absolute;
+				top: -100px;
+				left: 10px;
+			}
+			.box-1 {
+				margin: 90px;
+				width: 100px;
+				height: 100px;
+				box-shadow: 1px 1px 10px gainsboro;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box-1"></div>
+		<div class="box">
+			<div class="small-box"></div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, libero
+				dolor maxime, reprehenderit illum corporis at voluptatibus fugiat id a
+				nostrum magni, laboriosam aspernatur doloremque assumenda expedita.
+				Suscipit, vel sapiente.
+			</p>
+		</div>
+	</body>
+</html>

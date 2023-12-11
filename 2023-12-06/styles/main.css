@@ -112,14 +112,4 @@ header .container button:hover {
 
 .isskirtine-foto {
 	border-radius: 100%;
-	width: 300px;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-	left: 50px;
-}
-
-.isskirtine-foto img {
-	position: relative;
-	left: -50px;
 }
